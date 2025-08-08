@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UstaTek – Tamir & Teknik Servis</title>
+    <meta
+      name="description"
+      content="Ev ve iş yeriniz için hızlı, güvenilir tamir ve teknik servis hizmetleri."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        background: #f7f8fa;
+        color: #222;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: linear-gradient(120deg, #185adb 0%, #36e0dc 100%);
+        color: #fff;
+        padding: 32px 0 24px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.4rem;
+        letter-spacing: 1px;
+      }
+      header p {
+        margin-top: 8px;
+        font-size: 1.15rem;
+        opacity: 0.9;
+      }
+      nav {
+        margin-top: 24px;
+        text-align: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: #185adb;
+        background: #fff;
+        padding: 10px 28px;
+        border-radius: 22px;
+        margin: 0 8px;
+        font-weight: 700;
+        border: 1px solid #185adb;
+        transition: background 0.2s, color 0.2s;
+      }
+      nav a:hover {
+        background: #185adb;
+        color: #fff;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 36px auto 0 auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 6px 32px #0001;
+        padding: 36px 18px;
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px;
+      }
+      .feature {
+        flex: 1 1 260px;
+        min-width: 220px;
+        padding: 16px 8px;
+        border-radius: 8px;
+        background: #f4f7ff;
+        text-align: center;
+        box-shadow: 0 2px 10px #185adb11;
+        margin-bottom: 12px;
+      }
+      .feature h3 {
+        margin-top: 12px;
+        color: #185adb;
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+      }
+      .feature p {
+        font-size: 0.97rem;
+        color: #444;
+        margin-bottom: 0;
+      }
+      .section-title {
+        color: #185adb;
+        font-size: 1.5rem;
+        margin-top: 32px;
+        margin-bottom: 18px;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+      .references {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+      .reference {
+        background: #f1f8fa;
+        border-radius: 7px;
+        padding: 16px 18px;
+        box-shadow: 0 2px 8px #0001;
+        min-width: 200px;
+        max-width: 350px;
+        flex: 1 1 240px;
+        font-style: italic;
+        font-size: 1rem;
+        color: #333;
+        position: relative;
+      }
+      .reference::before {
+        content: "“";
+        font-size: 2.5rem;
+        position: absolute;
+        left: 8px;
+        top: 6px;
+        color: #36e0dc44;
+        font-family: serif;
+      }
+      .reference strong {
+        display: block;
+        margin-top: 10px;
+        color: #185adb;
+        font-style: normal;
+        font-size: 0.98rem;
+      }
+      .contact-cards {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 16px 0;
+      }
+      .contact-card {
+        flex: 1 1 210px;
+        min-width: 170px;
+        background: #f9f9fa;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px 12px;
+        margin-bottom: 8px;
+        box-shadow: 0 2px 8px #36e0dc22;
+      }
+      .contact-card a {
+        display: inline-block;
+        margin-top: 8px;
+        color: #185adb;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px dotted #185adb;
+        font-size: 1.07rem;
+      }
+      .contact-card a:hover {
+        color: #36e0dc;
+        border-bottom: 1px solid #36e0dc;
+      }
+      footer {
+        background: #222c;
+        color: #fff;
+        text-align: center;
+        padding: 18px 0;
+        margin-top: 36px;
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+      }
+      @media (max-width: 700px) {
+        .features,
+        .references,
+        .contact-cards {
+          flex-direction: column;
+          gap: 18px;
+        }
+        .container {
+          padding: 22px 4vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UstaTek Teknik Servis</h1>
+      <p>
+        Ev ve iş yeriniz için <strong>hızlı</strong>,
+        <strong>güvenilir</strong> tamir & teknik servis hizmetleri
+      </p>
+      <nav>
+        <a href="#hizmetler">Hizmetlerimiz</a>
+        <a href="#referanslar">Referanslar</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section id="hizmetler">
+        <div class="section-title">Hizmetlerimiz</div>
+        <div class="features">
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/ios-filled/50/185adb/maintenance.png"
+              width="40"
+              alt=""
+            />
+            <h3>Elektrik & Elektronik Tamir</h3>
+            <p>
+              Beyaz eşya, küçük ev aletleri, bilgisayar ve tüm elektronik
+              ürünler için yerinde ya da atölyede tamir hizmeti.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/ios-filled/50/185adb/plumbing.png"
+              width="40"
+              alt=""
+            />
+            <h3>Su Tesisatı & Sıhhi Tamir</h3>
+            <p>
+              Su kaçağı tespiti, musluk, batarya, klozet ve radyatör
+              arızalarının hızlı çözümü.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/ios-filled/50/185adb/air-conditioner.png"
+              width="40"
+              alt=""
+            />
+            <h3>Klima & Kombi Servisi</h3>
+            <p>
+              Klima ve kombi bakımı, onarımı, petek temizliği ve gaz dolumu
+              işlemleri garantili servis ile.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/ios-filled/50/185adb/drill.png"
+              width="40"
+              alt=""
+            />
+            <h3>Mobilya & Montaj</h3>
+            <p>
+              Mobilya kurulumu, dolap ve kapı tamiri, duvar delme ve montaj
+              işleri profesyonel şekilde yapılır.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="referanslar">
+        <div class="section-title">Müşteri Yorumları</div>
+        <div class="references">
+          <div class="reference">
+            "Buzdolabımızı çok hızlı ve uygun fiyata tamir ettiler. Tavsiye
+            ederim."
+            <strong>– Ayşe K.</strong>
+          </div>
+          <div class="reference">
+            "Kombi bakımı ve petek temizliğinde tam zamanında geldiler. Usta çok
+            ilgiliydi."
+            <strong>– Mehmet D.</strong>
+          </div>
+          <div class="reference">
+            "Ofisteki masa ve raf montajlarımızı kısa sürede yaptılar.
+            Teşekkürler!"
+            <strong>– Cemre T.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <div class="section-title">İletişim</div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div>Telefon</div>
+            <a href="tel:+905551234567">+90 555 123 45 67</a>
+          </div>
+          <div class="contact-card">
+            <div>WhatsApp</div>
+            <a href="https://wa.me/905551234567" target="_blank"
+              >WhatsApp'tan Yaz</a
+            >
+          </div>
+          <div class="contact-card">
+            <div>E-posta</div>
+            <a href="mailto:info@ustatek.com">info@ustatek.com</a>
+          </div>
+          <div class="contact-card">
+            <div>Adres</div>
+            <span>İstanbul, Türkiye</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>© 2025 UstaTek Teknik Servis | Tüm hakları saklıdır.</footer>
+  </body>
+</html>
